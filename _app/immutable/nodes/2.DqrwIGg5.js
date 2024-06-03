@@ -93,7 +93,7 @@ import {
   function Ge(h) {
     let e,
       r = `<div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-5 relative"><div class="lg:font-clash-grotesk lg:text-[120px]/[90px] pb-[33px] display-large-medium-mobile text-center lg:text-left lg:max-w-[842px] lg:tracking-[-2.4px] lg:leading-[90px] break-words">unlock community incentives</div> <div class="flex flex-col h-full w-auto text-center lg:text-left justify-end"><div class="flex flex-col lg:flex-row align-bottom gap-[25px]"><img class="hidden lg:block size-[32px] mt-2 m-auto" src="${Oe}" alt="plus-icon"/> <div class="body-regular lg:body-regular-medium lg:text-[18px] max-w-[260px] lg:max-w-[300px] self-end">Contribute to Ethereum’s growth, and get rewarded with Taiko.</div></div></div></div>`,
-      test_ss = `<div class="test_abs"><div class="test_abs_text">Claim tokens has begun</div><div class="test_abs_mini_block"><button class="btn btn-primary border-0 text-primary-content rounded-full body-bold px-6 min-h-12 h-12 w-fit btn_right_top btn_center_asd" onclick="modalOpen()">Claim TKO</button></div>
+      test_ss = `<div class="test_abs"><div class="test_abs_text">Claim of tokens has begun</div><div class="test_abs_mini_block"><button class="btn btn-primary border-0 text-primary-content rounded-full body-bold px-6 min-h-12 h-12 w-fit btn_right_top btn_center_asd" onclick="modalOpen()">Claim TKO</button></div>
       
       <div class="flex align-center justify-center w-full display-small-medium h-full lg:display-xl-medium test_abs_timer">
    <div class="flex flex-col w-full">
@@ -707,7 +707,7 @@ import {
           isActive: !1,
           topTitle: "Calculation",
           topText: "Merkle proof generation",
-          bottomText: "28/05/2024",
+          bottomText: "29/05/2024",
         },
       })),
       (U = new ne({
