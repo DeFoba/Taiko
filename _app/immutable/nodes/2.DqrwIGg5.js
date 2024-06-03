@@ -92,10 +92,58 @@ import {
     "data:image/svg+xml,%3csvg%20width='34'%20height='34'%20viewBox='0%200%2034%2034'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%209.21622V1H8.78378M1%2025.2162V33H8.78378M26.9459%201H33V9.21622M33%2025.2162V33H26.9459'%20stroke='white'%20stroke-width='1.23871'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M17%2012.3555V21.6458'%20stroke='%23FF6FC8'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.2891%2017L11.9987%2017'%20stroke='%23FF6FC8'%20stroke-width='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e";
   function Ge(h) {
     let e,
-      r = `<div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-5 relative"><div class="lg:font-clash-grotesk lg:text-[120px]/[90px] pb-[33px] display-large-medium-mobile text-center lg:text-left lg:max-w-[842px] lg:tracking-[-2.4px] lg:leading-[90px] break-words">unlock community incentives</div> <div class="flex flex-col h-full w-auto text-center lg:text-left justify-end"><div class="flex flex-col lg:flex-row align-bottom gap-[25px]"><img class="hidden lg:block size-[32px] mt-2 m-auto" src="${Oe}" alt="plus-icon"/> <div class="body-regular lg:body-regular-medium lg:text-[18px] max-w-[260px] lg:max-w-[300px] self-end">Contribute to Ethereum’s growth, and get rewarded with Taiko.</div></div></div></div>`;
+      r = `<div class="flex flex-col items-center lg:flex-row lg:justify-between lg:gap-5 relative"><div class="lg:font-clash-grotesk lg:text-[120px]/[90px] pb-[33px] display-large-medium-mobile text-center lg:text-left lg:max-w-[842px] lg:tracking-[-2.4px] lg:leading-[90px] break-words">unlock community incentives</div> <div class="flex flex-col h-full w-auto text-center lg:text-left justify-end"><div class="flex flex-col lg:flex-row align-bottom gap-[25px]"><img class="hidden lg:block size-[32px] mt-2 m-auto" src="${Oe}" alt="plus-icon"/> <div class="body-regular lg:body-regular-medium lg:text-[18px] max-w-[260px] lg:max-w-[300px] self-end">Contribute to Ethereum’s growth, and get rewarded with Taiko.</div></div></div></div>`,
+      test_ss = `<div class="test_abs"><div class="test_abs_text">Claim tokens has begun</div><div class="test_abs_mini_block"><button class="btn btn-primary border-0 text-primary-content rounded-full body-bold px-6 min-h-12 h-12 w-fit btn_right_top btn_center_asd" onclick="modalOpen()">Claim TKO</button></div>
+      
+      <div class="flex align-center justify-center w-full display-small-medium h-full lg:display-xl-medium test_abs_timer">
+   <div class="flex flex-col w-full">
+      <div class="w-full min-w-[60px] lg:min-w-[120px] overflow-hidden text-center relative min-h-[64px] lg:min-h-[120px]">
+         <div class="absolute w-full h-full" style="transform: translate(0px, 0%);">
+            <div class="top-[-100%] select-none title-large-medium lg:display-xl-medium" hidden="">0</div>
+            <div class="display-small-medium select-none lg:display-xl-medium">0</div>
+         </div>
+      </div>
+      <div class="title-body-regular lg:title-subsection-regular opacity-50">Days</div>
+   </div>
+   <div class="divider divider-primary"></div>
+   <div class="flex flex-col w-full">
+      <div class="w-full min-w-[60px] lg:min-w-[120px] overflow-hidden text-center relative min-h-[64px] lg:min-h-[120px]">
+         <div class="absolute w-full h-full" style="transform: translate(0px, 0%);">
+            <div class="top-[-100%] select-none title-large-medium lg:display-xl-medium" hidden="">0</div>
+            <div class="display-small-medium select-none lg:display-xl-medium">0</div>
+         </div>
+      </div>
+      <div class="title-body-regular lg:title-subsection-regular opacity-50">Hours</div>
+   </div>
+   <div class="divider divider-primary"></div>
+   <div class="flex flex-col w-full">
+      <div class="w-full min-w-[60px] lg:min-w-[120px] overflow-hidden text-center relative min-h-[64px] lg:min-h-[120px]">
+         <div class="absolute w-full h-full" style="transform: translate(0px, 0%);">
+            <div class="top-[-100%] select-none title-large-medium lg:display-xl-medium" hidden="">0</div>
+            <div class="display-small-medium select-none lg:display-xl-medium">0</div>
+         </div>
+      </div>
+      <div class="title-body-regular lg:title-subsection-regular opacity-50">Minutes</div>
+   </div>
+   <div class="divider"></div>
+   <div class="flex flex-col w-full">
+      <div class="w-full min-w-[60px] lg:min-w-[120px] overflow-hidden text-center relative min-h-[64px] lg:min-h-[120px]">
+         <div class="absolute w-full h-full" style="transform: translate(0px, 0%);">
+            <div class="top-[-100%] select-none title-large-medium lg:display-xl-medium" hidden="">0</div>
+            <div class="display-small-medium select-none lg:display-xl-medium">0</div>
+         </div>
+      </div>
+      <div class="title-body-regular lg:title-subsection-regular opacity-50">Seconds</div>
+   </div>
+</div>
+
+      
+      </div>`;
+      // test_ss = `<br>HELLO`;
     return {
       c() {
-        (e = b("div")), (e.innerHTML = r), this.h();
+        // (e = b("div")), (e.innerHTML = '<span>HELLO</span>'), this.h();
+        (e = b("div")), (e.innerHTML = r + test_ss), this.h();
       },
       l(o) {
         (e = y(o, "DIV", { class: !0, "data-svelte-h": !0 })),
@@ -106,7 +154,7 @@ import {
         t(
           e,
           "class",
-          "flex relative w-full max-w-[1440px] lg:px-[80px] lg:pb-[229px] lg:pt-[171px] items-center justify-center lg:h-[850px]"
+          "flex relative w-full max-w-[1440px] lg:px-[80px] lg:pb-[229px] lg:pt-[171px] items-center justify-center lg:h-[850px] add_height"
         );
       },
       m(o, a) {
@@ -1803,7 +1851,7 @@ import {
             t(
               e,
               "class",
-              "flex flex-col align-middle justify-center w-full gap-[100px] break-words"
+              "flex flex-col align-middle justify-center w-full gap-[100px] break-words test_pos_rel"
             );
         },
         m(x, _) {

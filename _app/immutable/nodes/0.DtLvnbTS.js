@@ -3229,9 +3229,10 @@ import {
           b(
             r,
             "d",
-            "M25.2209 25.8504C28.1055 23.1321 29.9062 19.2764 29.9062 15C29.9062 6.76751 23.2325 0.09375 15 0.09375C6.76751 0.09375 0.09375 6.76751 0.09375 15C0.09375 19.2764 1.89451 23.1321 4.77909 25.8504C7.44768 28.3651 11.0439 29.9062 15 29.9062C18.9561 29.9062 22.5523 28.3651 25.2209 25.8504ZM6.04879 23.8861C8.15018 21.2649 11.3791 19.5865 15 19.5865C18.6209 19.5865 21.8498 21.2649 23.9512 23.8861C21.6662 26.1878 18.4995 27.613 15 27.613C11.5005 27.613 8.33381 26.1878 6.04879 23.8861ZM20.7332 10.4135C20.7332 13.5798 18.1663 16.1466 15 16.1466C11.8337 16.1466 9.26683 13.5798 9.26683 10.4135C9.26683 7.24712 11.8337 4.68029 15 4.68029C18.1663 4.68029 20.7332 7.24712 20.7332 10.4135Z"
+            // "M25.2209 25.8504C28.1055 23.1321 29.9062 19.2764 29.9062 15C29.9062 6.76751 23.2325 0.09375 15 0.09375C6.76751 0.09375 0.09375 6.76751 0.09375 15C0.09375 19.2764 1.89451 23.1321 4.77909 25.8504C7.44768 28.3651 11.0439 29.9062 15 29.9062C18.9561 29.9062 22.5523 28.3651 25.2209 25.8504ZM6.04879 23.8861C8.15018 21.2649 11.3791 19.5865 15 19.5865C18.6209 19.5865 21.8498 21.2649 23.9512 23.8861C21.6662 26.1878 18.4995 27.613 15 27.613C11.5005 27.613 8.33381 26.1878 6.04879 23.8861ZM20.7332 10.4135C20.7332 13.5798 18.1663 16.1466 15 16.1466C11.8337 16.1466 9.26683 13.5798 9.26683 10.4135C9.26683 7.24712 11.8337 4.68029 15 4.68029C18.1663 4.68029 20.7332 7.24712 20.7332 10.4135Z"
+            ""
           ),
-          b(t, "class", "fill-current"),
+          b(t, "class", "fill-current hide_box"),
           b(t, "width", "20"),
           b(t, "height", "20"),
           b(t, "viewBox", "0 0 30 30"),
@@ -3314,7 +3315,7 @@ import {
           (t = w("button")),
             R(r.$$.fragment),
             (n = Ue(`
-      Connect Wallet`)),
+            Claim TKO`)),
             this.h();
         },
         l(u) {
@@ -3333,7 +3334,7 @@ import {
           b(
             t,
             "class",
-            "btn btn-primary border-0 text-primary-content rounded-full body-bold px-6 min-h-12 h-12 w-fit"
+            "btn btn-primary border-0 text-primary-content rounded-full body-bold px-6 min-h-12 h-12 w-fit btn_right_top"
           );
           t.setAttribute("onClick", "modalOpen()");
         },
@@ -3652,7 +3653,8 @@ import {
       n,
       i,
       a =
-        '<a href="#"><div class="dropdown dropdown-hover dropdown-bottom rounded-full lg:bg-elevated-background lg:hover:bg-neutral-background px-8 py-3"><div tabindex="0" role="button" onClick="modalOpen()">Claim TKO</div></div></a>',
+        // '<a href="#"><div class="dropdown dropdown-hover dropdown-bottom rounded-full lg:bg-elevated-background lg:hover:bg-neutral-background px-8 py-3"><div tabindex="0" role="button" onClick="modalOpen()">Claim TKO</div></div></a>',
+        '',
       s,
       u,
       h;
@@ -3665,6 +3667,7 @@ import {
             (n = I()),
             (i = w("div")),
             (i.innerHTML = a),
+            // (i.innerHTML = '<div>HELLO</div>'),
             (s = I()),
             R(u.$$.fragment),
             this.h();

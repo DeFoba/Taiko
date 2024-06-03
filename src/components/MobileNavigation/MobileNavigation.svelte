@@ -27,7 +27,7 @@
           <!-- <a href="/claim" class="flex items-center gap-4"
             ><img src={StarIcon} alt="icon" class="size-4" />Claim Token</a> -->
           <a href="#" class="flex items-center gap-4"
-            ><img src={HourglassIcon} alt="icon" class="size-4" />Claim TKO</a>
+            ><img src={HourglassIcon} alt="icon" class="size-4" />Claim TKO 5</a>
         </div>
       </div>
       <!-- <div class="collapse collapse-plus bg-neutral w-full rounded-box px-4">
