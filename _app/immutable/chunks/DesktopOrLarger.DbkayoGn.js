@@ -1,0 +1,2 @@
+import{s as a,o as c,a as m}from"./scheduler.DQm6Vmd6.js";import{S as u,i as d}from"./index.BJzYF_Wp.js";function h(i,n,s){const o=window.matchMedia("(min-width: 768px)");let{is:e}=n;function r(t){s(0,e=t.matches)}return c(()=>{s(0,e=o.matches),o.addEventListener("change",r)}),m(()=>{o.removeEventListener("change",r)}),i.$$set=t=>{"is"in t&&s(0,e=t.is)},[e]}class p extends u{constructor(n){super(),d(this,n,h,null,a,{is:0})}}export{p as D};
+//# sourceMappingURL=DesktopOrLarger.DbkayoGn.js.map
